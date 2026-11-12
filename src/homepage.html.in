@@ -94,7 +94,7 @@
         <p>Korean (native), English (fluent), Chinese (intermediate)</p>
       </section>
     </main>
-    <footer><p>Last updated __UPDATED__</p><a href="#about">Back to top ↑</a></footer>
+    <footer><a href="#about">Back to top ↑</a></footer>
   </div>
   <div class="toast" role="status" aria-live="polite" hidden></div>
 </body>
