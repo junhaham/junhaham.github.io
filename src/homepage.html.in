@@ -35,7 +35,7 @@
         <div class="intro-text">
         <p>Hi! I am Junha Ham, an undergraduate at <a href="https://en.snu.ac.kr/" target="_blank" rel="noopener noreferrer">Seoul National University</a>, studying Computer Science and Engineering and Economics. I am an undergraduate researcher at the Causality Lab, advised by <a href="https://www.sanghacklee.me/" target="_blank" rel="noopener noreferrer">Prof. Sanghack Lee</a>.</p>
         <p>My research focuses on causal machine learning, particularly causal foundation models and probabilistic inference. I am also interested in world models and robot learning and perception.</p>
-        <p>Previously, I worked with <a href="https://econ.snu.ac.kr/people/faculty?mode=view&amp;profidx=22" target="_blank" rel="noopener noreferrer">Prof. Jungmin Lee</a> on labor and education data, leading a geospatial visualization project on private tutoring academies in South Korea.</p>
+        <p>Previously, I worked with <a href="https://econ.snu.ac.kr/people/faculty?mode=view&amp;profidx=22" target="_blank" rel="noopener noreferrer">Prof. Jungmin Lee</a> on labor and education data.</p>
         <p class="contact-links"><a href="mailto:__EMAIL__">Email</a><a href="assets/pdf/Junha_Ham_CV.pdf" target="_blank" rel="noopener">CV</a><a href="https://github.com/__GITHUB__" target="_blank" rel="noopener noreferrer">GitHub</a></p>
         </div>
         <figure class="profile-photo">__PROFILE_PHOTO__</figure>
