@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Render the academic homepage using only the Python standard library."""
+import hashlib
 import html
 import json
 from pathlib import Path
@@ -69,7 +70,7 @@ if photo_path:
 else:
     profile_photo = '<div class="photo-placeholder" role="img" aria-label="Profile photo placeholder"><span>Profile photo</span></div>'
 page = (ROOT / 'src/homepage.html.in').read_text()
-values = {'URL': e(data['url']), 'EMAIL': e(data['email']), 'GITHUB': e(data['github']), 'YEAR': str(data['year']), 'UPDATED': e(data['updated']), 'SCHEMA': json.dumps(schema, ensure_ascii=False).replace('<', '\\u003c'), 'PUBLICATIONS': '\n'.join(pubs), 'EXPERIENCE': '\n'.join(experiences), 'PROFILE_PHOTO': profile_photo}
+values = {'URL': e(data['url']), 'EMAIL': e(data['email']), 'GITHUB': e(data['github']), 'YEAR': str(data['year']), 'UPDATED': e(data['updated']), 'SCHEMA': json.dumps(schema, ensure_ascii=False).replace('<', '\\u003c'), 'PUBLICATIONS': '\n'.join(pubs), 'EXPERIENCE': '\n'.join(experiences), 'PROFILE_PHOTO': profile_photo, 'STYLE_VERSION': hashlib.sha256((ROOT / 'assets/style.css').read_bytes()).hexdigest()[:12]}
 for key, value in values.items():
     page = page.replace('__' + key + '__', value)
 (ROOT / 'index.html').write_text(page)

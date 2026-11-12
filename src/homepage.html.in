@@ -11,7 +11,7 @@
   <meta property="og:url" content="__URL__/">
   <link rel="canonical" href="__URL__/">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/style.css?v=__STYLE_VERSION__">
   <script src="assets/main.js" defer></script>
   <script type="application/ld+json">__SCHEMA__</script>
   <title>Junha Ham</title>
