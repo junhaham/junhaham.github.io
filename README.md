@@ -9,7 +9,7 @@ A responsive academic homepage with publications, research experience, education
 - `content.json`: contact details, publications, abstracts, research experience, and the profile photo path.
 - `src/homepage.html.in`: biography, education, activities, and page structure.
 - `assets/style.css`: typography, layout, and photo framing.
-- `assets/profile.jpg`: profile photo. Displayed as a 160px circle on desktop and a 144px circle on mobile.
+- `assets/profile-conference.jpg`: profile photo. Displayed as a 160px circle on desktop and a 144px circle on mobile, framed from the head through the arms.
 - `assets/pdf/Junha_Ham_CV.pdf`: downloadable CV.
 
 After editing, rebuild the homepage:
