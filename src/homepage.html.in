@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Junha Ham is an undergraduate researcher at Seoul National University working on causal machine learning and causal foundation models.">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Junha Ham">
+  <meta property="og:description" content="Undergraduate researcher at Seoul National University. Causal machine learning, causal foundation models, and probabilistic inference.">
+  <meta property="og:url" content="__URL__/">
+  <link rel="canonical" href="__URL__/">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/main.js" defer></script>
+  <script type="application/ld+json">__SCHEMA__</script>
+  <title>Junha Ham</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page">
+    <header class="site-header" id="about">
+      <div>
+        <h1>Junha Ham</h1>
+      </div>
+      <nav aria-label="Main navigation">
+        <a href="#about">Home</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="about" aria-label="About Junha Ham">
+        <div class="intro-text">
+        <p>I am an undergraduate at <a href="https://en.snu.ac.kr/" target="_blank" rel="noopener noreferrer">Seoul National University</a>, studying Computer Science and Engineering and Economics. I am an undergraduate researcher at the Causality Lab, advised by <a href="https://www.sanghacklee.me/" target="_blank" rel="noopener noreferrer">Prof. Sanghack Lee</a>.</p>
+        <p>My research focuses on causal machine learning, particularly causal foundation models and probabilistic inference. I am also interested in world models and robot learning and perception.</p>
+        <p>Previously, I worked with <a href="https://econ.snu.ac.kr/people/faculty?mode=view&amp;profidx=22" target="_blank" rel="noopener noreferrer">Prof. Jungmin Lee</a> on labor and education data, leading a geospatial visualization project on private tutoring academies in South Korea.</p>
+        <p class="contact-links"><a href="mailto:__EMAIL__">Email</a><a href="assets/pdf/Junha_Ham_CV.pdf" target="_blank" rel="noopener">CV</a><a href="https://github.com/__GITHUB__" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+        </div>
+        <figure class="profile-photo">__PROFILE_PHOTO__</figure>
+      </section>
+
+      <section id="publications" aria-labelledby="publications-heading">
+        <h2 id="publications-heading">Publications</h2>
+        <div class="publication-list">__PUBLICATIONS__</div>
+      </section>
+
+      <section id="experience" aria-labelledby="experience-heading">
+        <h2 id="experience-heading">Research Experience</h2>
+        <div class="experience-list">__EXPERIENCE__</div>
+      </section>
+
+      <section id="education" aria-labelledby="education-heading">
+        <h2 id="education-heading">Education</h2>
+        <article class="entry">
+          <div class="entry-heading"><h3>Seoul National University</h3><p class="dates">Mar 2021 – Present</p></div>
+          <p>B.S. in Computer Science and Engineering <span class="muted">(in progress)</span><br>B.A. in Economics <span class="muted">(in progress)</span></p>
+        </article>
+      </section>
+
+      <section id="industry" aria-labelledby="industry-heading">
+        <h2 id="industry-heading">Industry Experience</h2>
+        <article class="entry">
+          <div class="entry-heading"><h3>ABEAR</h3><p class="dates">Jul 2022 – Aug 2022</p></div>
+          <p class="role">Operation Intern</p>
+        </article>
+      </section>
+
+      <section id="activities" aria-labelledby="activities-heading">
+        <h2 id="activities-heading">Extracurricular Activities</h2>
+        <article class="entry">
+          <div class="entry-heading"><h3>SNU Economic Review <span class="entry-role">· Club President</span></h3><p class="dates">Sep 2024 – Jul 2025</p></div>
+          <p>Led monthly economic seminars and weekly macroeconomic briefings, and authored articles for the club's magazine.</p>
+        </article>
+        <article class="entry">
+          <div class="entry-heading"><h3>SNUBUDDY <span class="entry-role">· Volunteer</span></h3><p class="dates">Sep 2024 – Dec 2024</p></div>
+          <p>Helped international students with cultural adaptation and university life.</p>
+        </article>
+      </section>
+
+      <section id="languages" aria-labelledby="languages-heading">
+        <h2 id="languages-heading">Languages</h2>
+        <p>Korean (native), English (fluent), Chinese (intermediate)</p>
+      </section>
+    </main>
+    <footer><p>Last updated __UPDATED__</p><a href="#about">Back to top ↑</a></footer>
+  </div>
+  <div class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

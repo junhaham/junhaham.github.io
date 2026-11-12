@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Junha Ham is an undergraduate researcher at Seoul National University working on causal machine learning and causal foundation models.">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Junha Ham">
+  <meta property="og:description" content="Undergraduate researcher at Seoul National University. Causal machine learning, causal foundation models, and probabilistic inference.">
+  <meta property="og:url" content="https://junhaham.github.io/">
+  <link rel="canonical" href="https://junhaham.github.io/">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/main.js" defer></script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Junha Ham", "url": "https://junhaham.github.io/", "email": "mailto:mattham2002@gmail.com", "jobTitle": "Undergraduate Researcher", "affiliation": {"@type": "Organization", "name": "Seoul National University"}, "sameAs": ["https://github.com/junhaham"], "knowsAbout": ["Causal machine learning", "Causal foundation models", "World models", "Robot learning and perception"]}</script>
+  <title>Junha Ham</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page">
+    <header class="site-header" id="about">
+      <div>
+        <h1>Junha Ham</h1>
+      </div>
+      <nav aria-label="Main navigation">
+        <a href="#about">Home</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="about" aria-label="About Junha Ham">
+        <div class="intro-text">
+        <p>I am an undergraduate at <a href="https://en.snu.ac.kr/" target="_blank" rel="noopener noreferrer">Seoul National University</a>, studying Computer Science and Engineering and Economics. I am an undergraduate researcher at the Causality Lab, advised by <a href="https://www.sanghacklee.me/" target="_blank" rel="noopener noreferrer">Prof. Sanghack Lee</a>.</p>
+        <p>My research focuses on causal machine learning, particularly causal foundation models and probabilistic inference. I am also interested in world models and robot learning and perception.</p>
+        <p>Previously, I worked with <a href="https://econ.snu.ac.kr/people/faculty?mode=view&amp;profidx=22" target="_blank" rel="noopener noreferrer">Prof. Jungmin Lee</a> on labor and education data, leading a geospatial visualization project on private tutoring academies in South Korea.</p>
+        <p class="contact-links"><a href="mailto:mattham2002@gmail.com">Email</a><a href="assets/pdf/Junha_Ham_CV.pdf" target="_blank" rel="noopener">CV</a><a href="https://github.com/junhaham" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+        </div>
+        <figure class="profile-photo"><img src="assets/profile.jpg" alt="Junha Ham" width="160" height="160"></figure>
+      </section>
+
+      <section id="publications" aria-labelledby="publications-heading">
+        <h2 id="publications-heading">Publications</h2>
+        <div class="publication-list"><article class="publication" id="jointcfm" aria-labelledby="title-jointcfm">
+  <h3 class="pub-title" id="title-jointcfm">Amortized Joint Posterior Inference for Various Causal Queries via Prior-Data Fitted Networks</h3>
+  <p class="pub-authors"><strong>Junha Ham</strong><sup>*</sup>, Deokgyu Kim<sup>*</sup>, Doeun Kim<sup>*</sup>, Serjin Kim<sup>*</sup>, and Sanghack Lee<sup>†</sup></p>
+  <p class="pub-venue">Under review, 2026</p>
+  <div class="pub-actions">
+    <details class="pub-details"><summary>Abstract</summary><p class="abstract-text">Prior-data fitted networks (PFNs) are transformers pre-trained to approximate posterior predictive distributions under a task prior. Their causal extensions estimate treatment effects from observational data without task-specific retraining. However, existing approaches typically restrict inference to predefined causal quantities, such as treatment effects or outcomes under treatment and control. In particular, they do not capture posterior dependence between the control and treatment conditional expected potential outcomes, limiting users’ ability to ask causal queries involving expected outcomes, treatment effects, and their relationships. Moreover, interval coverage alone does not establish posterior accuracy. To address these gaps, we introduce JointCFM, which integrates the flexibility of Bayesian joint posterior inference into PFNs, jointly capturing the epistemic uncertainty and posterior dependence of the control and treatment conditional expected potential outcomes pair. This enables users to answer various causal queries chosen at inference time from a single posterior without additional model fitting. Using simulation-based calibration, we test necessary calibration conditions for the marginals and posterior dependence, including within prespecified input groups. Under the task prior, experiments support calibration of tested quantities and demonstrate benefits of preserving posterior dependence. On semi-synthetic benchmarks, JointCFM is competitive in probabilistic prediction of conditional average treatment effects.</p></details>
+    <details class="pub-details"><summary>BibTeX</summary><pre class="citation-code">@unpublished{ham2026jointcfm,
+  title = {Amortized Joint Posterior Inference for Various Causal Queries via Prior-Data Fitted Networks},
+  author = {Ham, Junha and Kim, Deokgyu and Kim, Doeun and Kim, Serjin and Lee, Sanghack},
+  year = {2026},
+  note = {Under review}
+}</pre><button type="button" class="copy-button" data-copy>Copy citation</button></details>
+  </div>
+</article>
+<article class="publication" id="opera-s" aria-labelledby="title-opera-s">
+  <h3 class="pub-title" id="title-opera-s">OPERA-S: Preventing Error Amplification in Ensemble Off-Policy Evaluation</h3>
+  <p class="pub-authors">Hyunwoo Kim, Gyeongchan Han, Bogeun Kim, Serjin Kim, Sangyeon Cho, <strong>Junha Ham</strong>, Jaehyeok Shin, and Sanghack Lee<sup>†</sup></p>
+  <p class="pub-venue">Under review, 2026</p>
+  <div class="pub-actions">
+    <details class="pub-details"><summary>Abstract</summary><p class="abstract-text">Off-policy evaluation (OPE) estimates a target policy’s value from data collected by another policy. Weighting a pool of estimators can improve reliability, but allowing negative weights can amplify errors and produce an estimate worse than every member of the pool. We propose OPERA-S, which filters the estimator pool and learns simplex weights by minimizing the squared deviations of combined bootstrap estimates from a robust estimate of the policy value. The resulting optimization is a convex quadratic program. The simplex constraint guarantees that, on every dataset, the ensemble’s squared error is no greater than the largest squared error among its base estimators. For bounded estimator outputs, we bound the ensemble’s expected squared error under bootstrap resampling relative to the best convex combination of the filtered estimators. Experiments on contextual bandits, tabular reinforcement learning (RL), and D4RL continuous-control tasks demonstrate the effectiveness of OPERA-S in improving the accuracy and reliability of OPE.</p></details>
+    <details class="pub-details"><summary>BibTeX</summary><pre class="citation-code">@unpublished{ham2026operas,
+  title = {OPERA-S: Preventing Error Amplification in Ensemble Off-Policy Evaluation},
+  author = {Kim, Hyunwoo and Han, Gyeongchan and Kim, Bogeun and Kim, Serjin and Cho, Sangyeon and Ham, Junha and Shin, Jaehyeok and Lee, Sanghack},
+  year = {2026},
+  note = {Under review}
+}</pre><button type="button" class="copy-button" data-copy>Copy citation</button></details>
+  </div>
+</article>
+<article class="publication" id="cfm-post-treatment" aria-labelledby="title-cfm-post-treatment">
+  <h3 class="pub-title" id="title-cfm-post-treatment"><a href="https://openreview.net/forum?id=ULoLF1aOo1" target="_blank" rel="noopener noreferrer">Causal Foundation Models Perform Better without Post-treatment Variables</a></h3>
+  <p class="pub-authors"><strong>Junha Ham</strong><sup>*</sup>, Deokgyu Kim<sup>*</sup>, Doeun Kim<sup>*</sup>, Serjin Kim<sup>*</sup>, and Sanghack Lee<sup>†</sup></p>
+  <p class="pub-venue">ICML 2026 Workshop on Foundation Models for Structured Data (FMSD)</p>
+  <div class="pub-actions"><a class="paper-link" href="https://openreview.net/forum?id=ULoLF1aOo1" target="_blank" rel="noopener noreferrer">OpenReview</a>
+    <details class="pub-details"><summary>Abstract</summary><p class="abstract-text">Causal Foundation Models (CFMs) amortize Bayesian causal inference by pretraining on synthetic datasets, enabling zero-shot Conditional Average Treatment Effect (CATE) estimation. We study the structural bias induced when an inference-time query includes post-treatment covariates. We decompose the resulting CATE bias into three classical components — a natural indirect effect, an interaction term, and a treatment-differenced selection bias — and verify that the empirical CATE error of two representative CFMs, Do-PFN and CausalPFN, is consistent with the corresponding theoretical bounds under mediator and collider conditioning. Empirically, removing post-treatment covariates from the query yields substantial reductions in estimation error across post-treatment topologies, without retraining. As a practical alternative when the structural graph is unavailable, we introduce Treatment-Centric Local Discovery (TC-LD), a lightweight pre-inference filter that recovers most of this improvement on both fully-synthetic and semi-synthetic benchmarks.</p></details>
+    <details class="pub-details"><summary>BibTeX</summary><pre class="citation-code">@inproceedings{ham2026cfmposttreatment,
+  title = {Causal Foundation Models Perform Better without Post-treatment Variables},
+  author = {Ham, Junha and Kim, Deokgyu and Kim, Doeun and Kim, Serjin and Lee, Sanghack},
+  year = {2026},
+  booktitle = {ICML 2026 Workshop on Foundation Models for Structured Data (FMSD)},
+  url = {https://openreview.net/forum?id=ULoLF1aOo1}
+}</pre><button type="button" class="copy-button" data-copy>Copy citation</button></details>
+  </div>
+</article>
+<article class="publication" id="cfm-query" aria-labelledby="title-cfm-query">
+  <h3 class="pub-title" id="title-cfm-query"><a href="https://openreview.net/forum?id=HZ2mgJ8OJs" target="_blank" rel="noopener noreferrer">A Structural View of Query Misspecification in Causal Foundation Models</a></h3>
+  <p class="pub-authors"><strong>Junha Ham</strong><sup>*</sup>, Deokgyu Kim<sup>*</sup>, Doeun Kim<sup>*</sup>, Serjin Kim<sup>*</sup>, and Sanghack Lee<sup>†</sup></p>
+  <p class="pub-venue">ICML 2026 Workshop on Structured Probabilistic Inference and Generative Modeling (SPIGM)</p>
+  <div class="pub-actions"><a class="paper-link" href="https://openreview.net/forum?id=HZ2mgJ8OJs" target="_blank" rel="noopener noreferrer">OpenReview</a>
+    <details class="pub-details"><summary>Abstract</summary><p class="abstract-text">Causal Foundation Models (CFMs) pretrain amortized causal estimators on large collections of synthetic datasets sampled from structural causal model (SCM) priors. At optimal capacity, they recover the corresponding interventional posterior predictive target for queries on the training query surface. We study the failure mode induced when an inference-time query includes a post-treatment covariate. Structurally, we decompose the resulting CATE bias into three components: loss of the natural indirect effect, an interaction penalty, and treatment-differenced selection bias. Distributionally, for models whose training query surface includes post-treatment-conditioned queries, we prove that conditioning on post-treatment values yields strictly positive KL divergence from the marginal interventional law on a positive-measure subset, and we provide closed-form KL decompositions under linear-Gaussian SCMs. Empirically, removing post-treatment covariates from the query yields substantial reductions in PEHE across graph topologies and CFM models without retraining. We further introduce Treatment-Centric Local Discovery (TC-LD), a lightweight pre-inference filter that flags likely post-treatment variables and recovers most of this improvement on our synthetic benchmark.</p></details>
+    <details class="pub-details"><summary>BibTeX</summary><pre class="citation-code">@inproceedings{ham2026cfmquery,
+  title = {A Structural View of Query Misspecification in Causal Foundation Models},
+  author = {Ham, Junha and Kim, Deokgyu and Kim, Doeun and Kim, Serjin and Lee, Sanghack},
+  year = {2026},
+  booktitle = {ICML 2026 Workshop on Structured Probabilistic Inference and Generative Modeling (SPIGM)},
+  url = {https://openreview.net/forum?id=HZ2mgJ8OJs}
+}</pre><button type="button" class="copy-button" data-copy>Copy citation</button></details>
+  </div>
+</article></div>
+      </section>
+
+      <section id="experience" aria-labelledby="experience-heading">
+        <h2 id="experience-heading">Research Experience</h2>
+        <div class="experience-list"><article class="entry">
+  <div class="entry-heading"><h3>Causality Lab<span class="entry-organization">, Seoul National University</span></h3><p class="dates">Jul 2025 — Present</p></div>
+  <p class="role">Undergraduate Researcher · Advisor: <a href="https://www.sanghacklee.me/" target="_blank" rel="noopener noreferrer">Prof. Sanghack Lee</a></p>
+  <ul><li>Develop Causal Foundation Models.</li></ul>
+</article>
+<article class="entry">
+  <div class="entry-heading"><h3>AFINIT<span class="entry-organization">, Industry–Academia Collaboration</span></h3><p class="dates">Sep 2025 — Jul 2026</p></div>
+  <p class="role">Undergraduate Researcher</p>
+  <ul><li>Applied reinforcement learning and offline policy learning methods to India&#x27;s alternative lending market.</li></ul>
+</article>
+<article class="entry">
+  <div class="entry-heading"><h3>Department of Economics<span class="entry-organization">, Seoul National University</span></h3><p class="dates">Mar 2025 — Jun 2025</p></div>
+  <p class="role">Undergraduate Researcher · Advisor: <a href="https://econ.snu.ac.kr/people/faculty?mode=view&amp;profidx=22" target="_blank" rel="noopener noreferrer">Prof. Jungmin Lee</a></p>
+  <ul><li>Analyzed large-scale datasets in labor and education economics.</li><li>Led a geospatial visualization project tracking changes in the scale of private tutoring academies in South Korea over time.</li></ul>
+</article></div>
+      </section>
+
+      <section id="education" aria-labelledby="education-heading">
+        <h2 id="education-heading">Education</h2>
+        <article class="entry">
+          <div class="entry-heading"><h3>Seoul National University</h3><p class="dates">Mar 2021 – Present</p></div>
+          <p>B.S. in Computer Science and Engineering <span class="muted">(in progress)</span><br>B.A. in Economics <span class="muted">(in progress)</span></p>
+        </article>
+      </section>
+
+      <section id="industry" aria-labelledby="industry-heading">
+        <h2 id="industry-heading">Industry Experience</h2>
+        <article class="entry">
+          <div class="entry-heading"><h3>ABEAR</h3><p class="dates">Jul 2022 – Aug 2022</p></div>
+          <p class="role">Operation Intern</p>
+        </article>
+      </section>
+
+      <section id="activities" aria-labelledby="activities-heading">
+        <h2 id="activities-heading">Extracurricular Activities</h2>
+        <article class="entry">
+          <div class="entry-heading"><h3>SNU Economic Review <span class="entry-role">· Club President</span></h3><p class="dates">Sep 2024 – Jul 2025</p></div>
+          <p>Led monthly economic seminars and weekly macroeconomic briefings, and authored articles for the club's magazine.</p>
+        </article>
+        <article class="entry">
+          <div class="entry-heading"><h3>SNUBUDDY <span class="entry-role">· Volunteer</span></h3><p class="dates">Sep 2024 – Dec 2024</p></div>
+          <p>Helped international students with cultural adaptation and university life.</p>
+        </article>
+      </section>
+
+      <section id="languages" aria-labelledby="languages-heading">
+        <h2 id="languages-heading">Languages</h2>
+        <p>Korean (native), English (fluent), Chinese (intermediate)</p>
+      </section>
+    </main>
+    <footer><p>Last updated November 2026</p><a href="#about">Back to top ↑</a></footer>
+  </div>
+  <div class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+{
+  "name": "Junha Ham",
+  "email": "mattham2002@gmail.com",
+  "github": "junhaham",
+  "url": "https://junhaham.github.io",
+  "updated": "November 2026",
+  "year": 2026,
+  "publications": [
+    {
+      "id": "jointcfm",
+      "title": "Amortized Joint Posterior Inference for Various Causal Queries via Prior-Data Fitted Networks",
+      "authors": [
+        "Junha Ham*",
+        "Deokgyu Kim*",
+        "Doeun Kim*",
+        "Serjin Kim*",
+        "Sanghack Lee†"
+      ],
+      "status": "Under review",
+      "venue": "Under review",
+      "year": 2026,
+      "url": null,
+      "abstract": "Prior-data fitted networks (PFNs) are transformers pre-trained to approximate posterior predictive distributions under a task prior. Their causal extensions estimate treatment effects from observational data without task-specific retraining. However, existing approaches typically restrict inference to predefined causal quantities, such as treatment effects or outcomes under treatment and control. In particular, they do not capture posterior dependence between the control and treatment conditional expected potential outcomes, limiting users’ ability to ask causal queries involving expected outcomes, treatment effects, and their relationships. Moreover, interval coverage alone does not establish posterior accuracy. To address these gaps, we introduce JointCFM, which integrates the flexibility of Bayesian joint posterior inference into PFNs, jointly capturing the epistemic uncertainty and posterior dependence of the control and treatment conditional expected potential outcomes pair. This enables users to answer various causal queries chosen at inference time from a single posterior without additional model fitting. Using simulation-based calibration, we test necessary calibration conditions for the marginals and posterior dependence, including within prespecified input groups. Under the task prior, experiments support calibration of tested quantities and demonstrate benefits of preserving posterior dependence. On semi-synthetic benchmarks, JointCFM is competitive in probabilistic prediction of conditional average treatment effects."
+    },
+    {
+      "id": "opera-s",
+      "title": "OPERA-S: Preventing Error Amplification in Ensemble Off-Policy Evaluation",
+      "authors": [
+        "Hyunwoo Kim",
+        "Gyeongchan Han",
+        "Bogeun Kim",
+        "Serjin Kim",
+        "Sangyeon Cho",
+        "Junha Ham",
+        "Jaehyeok Shin",
+        "Sanghack Lee†"
+      ],
+      "status": "Under review",
+      "venue": "Under review",
+      "year": 2026,
+      "url": null,
+      "abstract": "Off-policy evaluation (OPE) estimates a target policy’s value from data collected by another policy. Weighting a pool of estimators can improve reliability, but allowing negative weights can amplify errors and produce an estimate worse than every member of the pool. We propose OPERA-S, which filters the estimator pool and learns simplex weights by minimizing the squared deviations of combined bootstrap estimates from a robust estimate of the policy value. The resulting optimization is a convex quadratic program. The simplex constraint guarantees that, on every dataset, the ensemble’s squared error is no greater than the largest squared error among its base estimators. For bounded estimator outputs, we bound the ensemble’s expected squared error under bootstrap resampling relative to the best convex combination of the filtered estimators. Experiments on contextual bandits, tabular reinforcement learning (RL), and D4RL continuous-control tasks demonstrate the effectiveness of OPERA-S in improving the accuracy and reliability of OPE."
+    },
+    {
+      "id": "cfm-post-treatment",
+      "title": "Causal Foundation Models Perform Better without Post-treatment Variables",
+      "authors": [
+        "Junha Ham*",
+        "Deokgyu Kim*",
+        "Doeun Kim*",
+        "Serjin Kim*",
+        "Sanghack Lee†"
+      ],
+      "status": "ICML 2026 Workshop",
+      "venue": "ICML 2026 Workshop on Foundation Models for Structured Data (FMSD)",
+      "year": 2026,
+      "url": "https://openreview.net/forum?id=ULoLF1aOo1",
+      "workshop": "https://icml-structured-fm-workshop.github.io/accepted-papers/",
+      "abstract": "Causal Foundation Models (CFMs) amortize Bayesian causal inference by pretraining on synthetic datasets, enabling zero-shot Conditional Average Treatment Effect (CATE) estimation. We study the structural bias induced when an inference-time query includes post-treatment covariates. We decompose the resulting CATE bias into three classical components — a natural indirect effect, an interaction term, and a treatment-differenced selection bias — and verify that the empirical CATE error of two representative CFMs, Do-PFN and CausalPFN, is consistent with the corresponding theoretical bounds under mediator and collider conditioning. Empirically, removing post-treatment covariates from the query yields substantial reductions in estimation error across post-treatment topologies, without retraining. As a practical alternative when the structural graph is unavailable, we introduce Treatment-Centric Local Discovery (TC-LD), a lightweight pre-inference filter that recovers most of this improvement on both fully-synthetic and semi-synthetic benchmarks."
+    },
+    {
+      "id": "cfm-query",
+      "title": "A Structural View of Query Misspecification in Causal Foundation Models",
+      "authors": [
+        "Junha Ham*",
+        "Deokgyu Kim*",
+        "Doeun Kim*",
+        "Serjin Kim*",
+        "Sanghack Lee†"
+      ],
+      "status": "ICML 2026 Workshop",
+      "venue": "ICML 2026 Workshop on Structured Probabilistic Inference and Generative Modeling (SPIGM)",
+      "year": 2026,
+      "url": "https://openreview.net/forum?id=HZ2mgJ8OJs",
+      "workshop": "https://spigmworkshop2026.github.io/papers/",
+      "abstract": "Causal Foundation Models (CFMs) pretrain amortized causal estimators on large collections of synthetic datasets sampled from structural causal model (SCM) priors. At optimal capacity, they recover the corresponding interventional posterior predictive target for queries on the training query surface. We study the failure mode induced when an inference-time query includes a post-treatment covariate. Structurally, we decompose the resulting CATE bias into three components: loss of the natural indirect effect, an interaction penalty, and treatment-differenced selection bias. Distributionally, for models whose training query surface includes post-treatment-conditioned queries, we prove that conditioning on post-treatment values yields strictly positive KL divergence from the marginal interventional law on a positive-measure subset, and we provide closed-form KL decompositions under linear-Gaussian SCMs. Empirically, removing post-treatment covariates from the query yields substantial reductions in PEHE across graph topologies and CFM models without retraining. We further introduce Treatment-Centric Local Discovery (TC-LD), a lightweight pre-inference filter that flags likely post-treatment variables and recovers most of this improvement on our synthetic benchmark."
+    }
+  ],
+  "research": [
+    {
+      "title": "Causality Lab",
+      "organization": "Seoul National University",
+      "role": "Undergraduate Researcher",
+      "date": "Jul 2025 — Present",
+      "advisor": "Sanghack Lee",
+      "advisor_url": "https://www.sanghacklee.me/",
+      "points": [
+        "Develop Causal Foundation Models."
+      ]
+    },
+    {
+      "title": "AFINIT",
+      "organization": "Industry–Academia Collaboration",
+      "role": "Undergraduate Researcher",
+      "date": "Sep 2025 — Jul 2026",
+      "points": [
+        "Applied reinforcement learning and offline policy learning methods to India's alternative lending market."
+      ]
+    },
+    {
+      "title": "Department of Economics",
+      "organization": "Seoul National University",
+      "role": "Undergraduate Researcher",
+      "date": "Mar 2025 — Jun 2025",
+      "advisor": "Jungmin Lee",
+      "advisor_url": "https://econ.snu.ac.kr/people/faculty?mode=view&profidx=22",
+      "points": [
+        "Analyzed large-scale datasets in labor and education economics.",
+        "Led a geospatial visualization project tracking changes in the scale of private tutoring academies in South Korea over time."
+      ]
+    }
+  ],
+  "profile_photo": "assets/profile.jpg"
+}
